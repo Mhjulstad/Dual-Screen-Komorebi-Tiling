@@ -31,14 +31,7 @@
         },
         {
           "name": "II",
-          "layout": "BSP",
-          "initial_workspace_rules": [
-            {
-              "id": "zen.exe",
-              "kind": "Exe",
-              "matching_strategy": "Equals"
-            }
-          ]
+          "layout": "BSP"
         },
         {
           "name": "III",
@@ -109,11 +102,25 @@
         },
         {
           "name": "2",
-          "layout": "BSP"
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "id": "zen.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
         },
         {
           "name": "3",
-          "layout": "BSP"
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Spotify.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
         },
         {
           "name": "4",
