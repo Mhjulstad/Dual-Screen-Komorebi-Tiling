@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.37/schema.json",
-  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
   "default_workspace_padding": 2,
@@ -52,15 +52,8 @@
           ]
         },
         {
-          "name": "IV",
-          "layout": "BSP",
-          "workspace_rules": [
-            {
-              "id": "Discord.exe",
-              "kind": "Exe",
-              "matching_strategy": "Equals"
-            }
-          ]
+          "name": "VI",
+          "layout": "BSP"
         },
         {
           "name": "V",
@@ -105,6 +98,33 @@
         {
           "name": "VII",
           "layout": "BSP"
+        }
+      ]
+    },
+    {
+      "workspaces": [
+        {
+          "name": "1",
+          "layout": "BSP"
+        },
+        {
+          "name": "2",
+          "layout": "BSP"
+        },
+        {
+          "name": "3",
+          "layout": "BSP"
+        },
+        {
+          "name": "4",
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Discord.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
         }
       ]
     }
