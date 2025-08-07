@@ -1,0 +1,171 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.37/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 2,
+  "default_container_padding": -2,
+  "border": true,
+  "border_width": 9,
+  "border_offset": -2,
+  "border_style": "Square",
+  "border_colours": {
+    "single": "#4c7bfc",
+    "stack": "#00a542",
+    "monocle": "#FFA07A",
+    "unfocused": "#808080"
+  },
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Soulstone Survivors.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
+        },
+        {
+          "name": "II",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "id": "zen.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
+        },
+        {
+          "name": "III",
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Code.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
+        },
+        {
+          "name": "IV",
+          "layout": "BSP",
+          "workspace_rules": [
+            {
+              "id": "Discord.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
+        },
+        {
+          "name": "V",
+          "workspace_rules": [
+            {
+              "id": "EpicGamesLauncher.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            },
+            {
+              "id": "REDlauncher.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            },
+            {
+              "id": "DuneSandbox-Win64-Shipping.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
+        },
+        {
+          "name": "VI",
+          "workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "HeSuVi.exe",
+              "matching_strategy": "Equals"
+            },
+            {
+              "kind": "Exe",
+              "id": "voicemeeter",
+              "matching_strategy": "Contains"
+            },
+            {
+              "kind": "Exe",
+              "id": "HeSuVi.exe",
+              "matching_strategy": "Equals"
+            }
+          ]
+        },
+        {
+          "name": "VII",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ],
+  "floating_applications": [
+    {
+      "kind": "Exe",
+      "id": "HeSuVi.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "voicemeeter",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "EpicGamesLauncher.exe",
+      "matching_strategy": "Equals",
+      "workspace": "V"
+    },
+    {
+      "id": "FuncomLauncher.exe",
+      "kind": "Exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "id": "DuneSandbox-Win64-Shipping.exe",
+      "kind": "Exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "id": "steamwebhelper.exe",
+      "kind": "Exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "manage_rules": [
+    {
+      "kind": "Exe",
+      "id": "RevoUPPort.exe",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Exe",
+      "id": "Vortex.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "tray_and_multi_window_applications": [
+      {
+        "id": "Soulstone Survivors.exe",
+        "kind": "Exe",
+        "matching_strategy": "Equals"
+      }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "HeSuVi.exe",
+      "matching_strategy": "Equals"
+    }
+  ]
+}
