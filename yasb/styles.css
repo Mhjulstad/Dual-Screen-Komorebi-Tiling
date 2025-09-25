@@ -208,12 +208,34 @@ QToolTip {
 }
 
 /* taskbar*/
-.taskbar-widget {
-    padding: 0;
-    margin: 0;
+.taskbar-widget .app-container {
+    margin: 4px 2px;
+    border-radius: 4px;
+    padding: 0 4px;
 }
-.taskbar-widget .app-icon {
-    padding:0 6px;
+.taskbar-widget .app-container.foreground {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.taskbar-widget .app-container.flashing {
+    background-color: rgba(255, 106, 106, 0.63);
+}
+.taskbar-widget .app-container .app-title {
+    padding-left: 4px;
+}
+/* Taskbar preview popup is very limited in styling options, do not use margins/paddings here */
+.taskbar-preview {
+    border-radius: 8px; 
+    background-color:#2b2c2d; 
+}
+.taskbar-preview .header {
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
+.taskbar-preview .header .title {
+    color: #d6d6d6;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    font-size: 13px;
 }
 
 /*KOMOREBI-WORKSPACES*/
@@ -390,15 +412,15 @@ QToolTip {
 }
 */
 
-.apps-widget {
-    padding: 0 4px 0 2px;
+.apps-widget .widget-container{
+    padding: 0 4px 0 8px;
 }
-.apps-widget .label {
+.apps-widget .label .widget-container{
     font-size: 14px;
     padding: 0 2px;
     color: var(--subtext0);
 }
-.apps-widget .label:hover {
+.apps-widget .label:hover .widget-container{
     color: var(--text);
 }
 

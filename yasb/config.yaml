@@ -49,9 +49,9 @@ bars:
       ]
       center: [
         "clock",
-        "apps"
       ]
       right: [
+        "todo",
         "media",
         "weather",
         #"microphone",
@@ -86,7 +86,46 @@ widgets:
         alignment: "right"
         direction: "down"
         distance: 4
-  taskbar:
+  todo:
+    type: "yasb.todo.TodoWidget"
+    options:
+      label: "\uf0ae {count}/{completed}"
+      label_alt: "\uf0ae Tasks: {count}"
+      menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "center"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+      icons:
+        add: "\uf501 New Task"
+        edit: "Edit"
+        delete: "Delete"
+        date: "\ue641"
+        category: "\uf412"
+        checked: "\udb80\udd34"
+        unchecked: "\udb80\udd30"
+        sort: "\ueab4"
+        no_tasks: "\uf4a0"
+      categories:
+        default:
+          label: "General"
+        soon:
+          label: "Complete soon"
+        today:
+          label: "End of day"
+        urgent:
+          label: "Urgent"
+        important:
+          label: "Important"
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "do_nothing"
+        on_right: "toggle_label"
+taskbar:
     type: "yasb.taskbar.TaskbarWidget"
     options:
       icon_size: 16
@@ -105,9 +144,9 @@ widgets:
         classes: []
       container_padding: 
         top: 0
-        left: 8
+        left: 3
         bottom: 0
-        right: 8
+        right: 3
         active_window:
   whkd:
     type: "yasb.whkd.WhkdWidget"
@@ -337,33 +376,6 @@ widgets:
         thunderstormDay: "\ue30f"
         thunderstormNight: "\ue338"
         default: "\uebaa"
-  # volume:
-  #   type: "yasb.volume.VolumeWidget"
-  #   options:
-  #     label: "<span>{icon}</span> {level}"
-  #     label_alt: "{volume}"
-  #     tooltip: false
-  #     volume_icons:
-  #       - "\ueee8"
-  #       - "\uf026"
-  #       - "\uf027"
-  #       - "\uf027"
-  #       - "\uf028"
-  #     callbacks:
-  #       on_left: "toggle_mute"
-  #       on_right: "exec cmd.exe /c start ms-settings:sound"
-  # microphone:
-  #   type: "yasb.microphone.MicrophoneWidget"  
-  #   options:
-  #     label: "<span>{icon}</span> {level}"
-  #     label_alt: "<span>{icon}</span> {level}%"
-  #     icons:
-  #       normal: "\udb80\udf6c"
-  #       muted: "\udb80\udf6d"
-  #     callbacks:
-  #       on_left: "toggle_mute"
-  #       on_middle: "toggle_label"
-  #       on_right: "exec cmd.exe /c start ms-settings:sound"
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:

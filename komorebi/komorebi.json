@@ -6,15 +6,16 @@
   "default_workspace_padding": 1,
   "default_container_padding": -2,
   "border": true,
-  "border_width": 6,
-  "border_offset": -1,
-  "border_style": "Square",
-  "border_colours": {
-    "single": "#4c7bfc",
-    "stack": "#00a542",
-    "monocle": "#FFA07A",
-    "unfocused": "#808080"
-  },
+"border_width": 4,
+"border_offset": -1,
+"border_style": "Rounded",
+"mouse_follows_focus": false,
+"border_colours": {
+  "single": "#61AFEF",
+  "stack": "#98C379",
+  "monocle": "#C678DD", 
+  "unfocused": "#3E4451" 
+},
   "monitors": [
     {
       "workspaces": [
