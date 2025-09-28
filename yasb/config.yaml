@@ -125,55 +125,55 @@ widgets:
         on_left: "toggle_menu"
         on_middle: "do_nothing"
         on_right: "toggle_label"
-taskbar:
-    type: "yasb.taskbar.TaskbarWidget"
-    options:
-      icon_size: 16
-      animation:
-        enabled: true
-        duration: 200
-        type: "fadeInOut"
-      title_label:
-        enabled: false
-        show: "focused"
-        min_length: 10
-        max_length: 30
-      ignore_apps:
-        processes: []
-        titles: []
-        classes: []
-      container_padding: 
-        top: 0
-        left: 3
-        bottom: 0
-        right: 3
-        active_window:
+  taskbar:
+      type: "yasb.taskbar.TaskbarWidget"
+      options:
+        icon_size: 16
+        animation:
+          enabled: true
+          duration: 200
+          type: "fadeInOut"
+        title_label:
+          enabled: false
+          show: "focused"
+          min_length: 10
+          max_length: 30
+        ignore_apps:
+          processes: []
+          titles: []
+          classes: []
+        container_padding: 
+          top: 0
+          left: 3
+          bottom: 0
+          right: 3
+          active_window:
   whkd:
-    type: "yasb.whkd.WhkdWidget"
-    options:
-      label: "<span>\uf11c</span>"
-      special_keys:
-        - key: "win"
-          key_replace: "\ue70f"
-        - key: "ctrl"
-          key_replace: "Ctrl"
-        - key: "alt" 
-          key_replace: "Alt"
-        - key: "shift"
-          key_replace: "Shift"
-        - key: "left"
-          key_replace: "\u2190"
-        - key: "right"
-          key_replace: "\u2192"
-        - key: "up"
-          key_replace: "\u2191"
-        - key: "down"
-          key_replace: "\u2193"
-      label_shadow:
-        enabled: true
-        color: "black"
-        radius: 3
-        offset: [ 1, 1 ]
+      type: "yasb.whkd.WhkdWidget"
+      options:
+        label: "<span>\uf11c</span>"
+        special_keys:
+          - key: "win"
+            key_replace: "\ue70f"
+          - key: "ctrl"
+            key_replace: "Ctrl"
+          - key: "alt" 
+            key_replace: "Alt"
+          - key: "shift"
+            key_replace: "Shift"
+          - key: "left"
+            key_replace: "\u2190"
+          - key: "right"
+            key_replace: "\u2192"
+          - key: "up"
+            key_replace: "\u2191"
+          - key: "down"
+            key_replace: "\u2193"
+        label_shadow:
+          enabled: true
+          color: "black"
+          radius: 3
+          offset: [ 1, 1 ]
   home:
     type: "yasb.home.HomeWidget"
     options:
@@ -442,7 +442,7 @@ taskbar:
         icon_low: "\uf243"
         icon_medium: "\uf242"
         icon_high: "\uf241"
-        icon_full: "uf240"
+        icon_full: "\uf240"
       label_shadow:
         enabled: true
         color: "black"
