@@ -9,7 +9,7 @@
 "border_width": 4,
 "border_offset": -1,
 "border_style": "Rounded",
-"mouse_follows_focus": false,
+"mouse_follows_focus": true,
 "border_colours": {
   "single": "#61AFEF",
   "stack": "#98C379",
