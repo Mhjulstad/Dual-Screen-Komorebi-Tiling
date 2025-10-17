@@ -30,6 +30,14 @@ alt + shift + k         : komorebic move up
 alt + shift + l         : komorebic move right
 alt + shift + return    : komorebic promote
 
+# Cycle monitors
+alt + z                 : komorebic cycle-monitor previous
+alt + c                 : komorebic cycle-monitor next
+
+# Cycle move to monitor
+alt + shift + z			: komorebic cycle-move-to-monitor previous
+alt + shift + c			: komorebic cycle-move-to-monitor next
+
 # Stack windows
 alt + left              : komorebic stack left
 alt + down              : komorebic stack down

@@ -37,7 +37,7 @@
         {
           "name": "III",
           "layout": "BSP",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "id": "Code.exe",
               "kind": "Exe",
@@ -51,7 +51,7 @@
         },
         {
           "name": "V",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "id": "EpicGamesLauncher.exe",
               "kind": "Exe",
@@ -71,7 +71,7 @@
         },
         {
           "name": "VI",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "kind": "Exe",
               "id": "HeSuVi.exe",
@@ -115,7 +115,7 @@
         {
           "name": "3",
           "layout": "BSP",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "id": "Spotify.exe",
               "kind": "Exe",
@@ -126,7 +126,7 @@
         {
           "name": "4",
           "layout": "BSP",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "id": "Discord.exe",
               "kind": "Exe",
