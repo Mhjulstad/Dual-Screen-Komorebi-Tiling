@@ -147,7 +147,6 @@ widgets:
           left: 3
           bottom: 0
           right: 3
-          active_window:
   whkd:
       type: "yasb.whkd.WhkdWidget"
       options:
@@ -230,9 +229,9 @@ widgets:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
       label_offline: "Komorebi Offline"
-      label_workspace_btn: ""
-      label_workspace_active_btn: ""
-      label_workspace_populated_btn: ""
+      label_workspace_btn: "{index}"
+      label_workspace_active_btn: "{index}"
+      label_workspace_populated_btn: "{index}"
       label_default_name: ""
       label_zero_index: false
       hide_empty_workspaces: true
@@ -367,8 +366,8 @@ widgets:
         cloudyNight: "\ue311"
         rainyDay: "\ue308"
         rainyNight: "\ue333"
-        snowyIcyDay: "\ue30a"
-        snowyIcyNight: "\ue335"
+        #snowyIcyDay: "\ue30a"
+        #snowyIcyNight: "\ue335"
         blizzardDay: "\udb83\udf36"
         blizzardNight: "\udb83\udf36"
         foggyDay: "\ue303"

@@ -103,14 +103,7 @@
         },
         {
           "name": "2",
-          "layout": "BSP",
-          "initial_workspace_rules": [
-            {
-              "id": "zen.exe",
-              "kind": "Exe",
-              "matching_strategy": "Equals"
-            }
-          ]
+          "layout": "BSP"
         },
         {
           "name": "3",
@@ -194,6 +187,26 @@
       "kind": "Exe",
       "id": "HeSuVi.exe",
       "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Sticky Notes (new)",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "voicemeeter",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Obsidian",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Battle.net",
+      "matching_strategy": "Contains"
     }
   ]
 }
