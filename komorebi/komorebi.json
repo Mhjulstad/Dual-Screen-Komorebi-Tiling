@@ -173,6 +173,11 @@
       "kind": "Exe",
       "id": "Vortex.exe",
       "matching_strategy": "Equals"
+    },
+    {
+      "id": "Claude.exe",
+      "kind": "Exe",
+      "matching_strategy": "Equals"
     }
   ],
   "tray_and_multi_window_applications": [
@@ -206,6 +211,22 @@
     {
       "kind": "Title",
       "id": "Battle.net",
+      "matching_strategy": "Contains"
+    },
+
+    {
+      "kind": "Title",
+      "id": "Epic Games Launcher",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Dune: Spice Wars",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "World of Warcraft",
       "matching_strategy": "Contains"
     }
   ]
