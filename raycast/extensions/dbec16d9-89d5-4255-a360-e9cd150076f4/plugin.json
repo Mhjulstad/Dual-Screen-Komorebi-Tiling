@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "media-converter",
+  "description": "Convert, merge, trim and edit video, image and audio files with FFmpeg, turn video into GIFs, inspect media, and use presets on Mac and Windows.",
+  "author": {
+    "name": "leandro.maia"
+  },
+  "license": "MIT"
+}

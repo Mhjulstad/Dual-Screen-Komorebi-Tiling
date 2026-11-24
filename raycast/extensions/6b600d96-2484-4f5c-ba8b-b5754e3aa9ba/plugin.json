@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "everything-search",
+  "description": "Search files and folders on Windows with Everything by voidtools, browse directories and search Everything ETP/FTP servers.",
+  "author": {
+    "name": "anastasiy_safari"
+  },
+  "license": "MIT"
+}

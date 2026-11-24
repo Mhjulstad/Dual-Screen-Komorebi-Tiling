@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "word-search",
+  "description": "Find synonyms, antonyms, rhymes, adjectives, correct spellings, words that sound alike and words with missing letters.",
+  "author": {
+    "name": "rishabswift"
+  },
+  "license": "MIT"
+}

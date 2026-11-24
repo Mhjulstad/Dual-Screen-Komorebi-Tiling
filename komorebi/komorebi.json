@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.37/schema.json",
   "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
@@ -10,6 +9,11 @@
 "border_offset": -1,
 "border_style": "Rounded",
 "mouse_follows_focus": true,
+  "display_index_preferences": {
+    "0": "MSI4DD0-5&1f20ce89&0&UID37120",
+    "1": "AUS24A3-5&1f20ce89&0&UID37126",
+    "2": "MRG4100-5&1f20ce89&0&UID37122"
+  },
 "border_colours": {
   "single": "#61AFEF",
   "stack": "#98C379",
@@ -18,6 +22,8 @@
 },
   "monitors": [
     {
+      "window_based_work_area_offset": { "left": 0, "top": 0, "right": 1720, "bottom": 0 },
+      "window_based_work_area_offset_limit": 1,
       "workspaces": [
         {
           "name": "I",
@@ -128,6 +134,15 @@
           ]
         }
       ]
+    },
+    {
+      "window_based_work_area_offset": { "left": 0, "top": 0, "right": 1920, "bottom": 0 },
+      "window_based_work_area_offset_limit": 1,
+      "workspaces": [
+        { "name": "X1", "layout": "BSP" },
+        { "name": "X2", "layout": "BSP" },
+        { "name": "X3", "layout": "BSP" }
+      ]
     }
   ],
   "floating_applications": [
@@ -175,9 +190,26 @@
       "matching_strategy": "Equals"
     },
     {
-      "id": "Claude.exe",
+      "id": "Claude",
       "kind": "Exe",
-      "matching_strategy": "Equals"
+      "matching_strategy": "Contains"
+    },
+    {
+      "id": "claude",
+      "kind": "Exe",
+      "matching_strategy": "Contains"
+    }
+  ],
+  "layered_applications": [
+    {
+      "id": "Claude",
+      "kind": "Exe",
+      "matching_strategy": "Contains"
+    },
+    {
+      "id": "claude",
+      "kind": "Exe",
+      "matching_strategy": "Contains"
     }
   ],
   "tray_and_multi_window_applications": [
