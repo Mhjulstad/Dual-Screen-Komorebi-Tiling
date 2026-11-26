@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "spotify-player",
+  "description": "Control Spotify playback and volume, search songs, albums and podcasts, browse your library, find lyrics and see what's playing in the menu bar.",
+  "author": {
+    "name": "mattisssa"
+  },
+  "license": "MIT"
+}

@@ -38,9 +38,11 @@ bars:
       left:
       - quick_launch
       - komorebi_workspaces
+      - komorebi_active_layout
       center:
       - taskbar
       right:
+      - media
       - audio_visualizer
       - systray
       - open_meteo
@@ -224,6 +226,78 @@ widgets:
         color: "grey"
         radius: 6
         offset: [ 1, 1 ]
+  komorebi_active_layout:
+    type: "komorebi.active_layout.ActiveLayoutWidget"
+    options:
+      hide_if_offline: true
+      label: "<span>{icon}</span>"
+      layouts: ["bsp", "columns", "rows", "grid", "scrolling", "vertical_stack", "horizontal_stack", "ultrawide_vertical_stack", "right_main_vertical_stack"]
+      layout_icons:
+        bsp: ""
+        columns: ""
+        rows: ""
+        grid: "󰝘"
+        scrolling: ""
+        vertical_stack: ""
+        horizontal_stack: ""
+        ultrawide_vertical_stack: ""
+        right_main_vertical_stack: ""
+        monocle: ""
+        maximized: ""
+        floating: ""
+        paused: "󰾉"
+        tiling: "󰙀"
+      callbacks:
+        on_left: "toggle_layout_menu"   # menu with every layout + monocle/float/pause
+        on_middle: "toggle_monocle"
+        on_right: "next_layout"
+      layout_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "left"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+        show_layout_icons: true
+  media:
+    type: "yasb.media.MediaWidget"
+    options:
+      label: "{title}{s}{artist}"
+      label_alt: "{title}"
+      separator: " - "
+      hide_empty: true
+      max_field_size:
+        label: 30
+        label_alt: 30
+      show_thumbnail: true
+      controls_only: false
+      controls_left: true
+      thumbnail_alpha: 80
+      thumbnail_padding: 8
+      thumbnail_corner_radius: 4
+      icons:
+        prev_track: ""
+        next_track: ""
+        play: ""
+        pause: ""
+      media_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        thumbnail_size: 100
+        thumbnail_corner_radius: 8
+        show_source: true
+        show_volume_slider: true
+      callbacks:
+        on_left: "toggle_media_menu"
+        on_middle: "toggle_play_pause"
+        on_right: "toggle_label"
   clock:
     type: yasb.clock.ClockWidget
     options:

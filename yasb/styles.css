@@ -1304,3 +1304,33 @@
 .wallpapers-widget:hover {
     background-color: var(--yasb-white-alpha-20);
 }
+/* MEDIA (added 2026-11-25) */
+.media-widget { padding: 0; margin: 0 4px; }
+.media-widget .label { padding: 0 4px; font-size: 12px; }
+.media-widget .btn {
+    padding: 0 4px;
+    margin: 0;
+    font-family: var(--icons-font);
+    font-weight: 400;
+    color: var(--yasb-fg);
+    background-color: transparent;
+    border: none;
+}
+.media-widget .btn:hover { color: #ffffff; }
+.media-widget .btn.play { font-size: 14px; }
+.media-widget .btn.disabled,
+.media-widget .btn.disabled:hover { color: #4e525c; background-color: transparent; }
+.media-menu { min-width: 400px; max-width: 400px; }
+.media-menu .title, .media-menu .artist, .media-menu .source { margin-left: 10px; font-family: var(--system-font); }
+.media-menu .title { font-size: 14px; font-weight: 600; }
+.media-menu .artist { font-size: 12px; color: #9498a8; }
+.media-menu .btn { font-family: var(--icons-font); font-size: 16px; background-color: transparent; border: none; padding: 4px 8px; }
+
+/* KOMOREBI ACTIVE LAYOUT (added 2026-11-25) */
+.komorebi-active-layout .widget-container { margin: 0 4px; }
+.komorebi-active-layout .icon { font-family: var(--icons-font-fallback); font-size: 14px; }
+.komorebi-active-layout .label { font-size: 12px; }
+.komorebi-layout-menu .menu-item { padding: 6px 14px; font-size: 12px; }
+.komorebi-layout-menu .menu-item-icon { font-family: var(--icons-font-fallback); font-size: 14px; }
+.komorebi-layout-menu .menu-item-text { font-family: var(--system-font); padding-left: 6px; }
+.komorebi-layout-menu .menu-item:hover { background-color: var(--yasb-white-alpha-10); }

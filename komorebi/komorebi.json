@@ -136,7 +136,7 @@
       ]
     },
     {
-      "window_based_work_area_offset": { "left": 0, "top": 0, "right": 1920, "bottom": 0 },
+      "window_based_work_area_offset": { "left": 0, "top": 0, "right": 0, "bottom": 0 },
       "window_based_work_area_offset_limit": 1,
       "workspaces": [
         { "name": "X1", "layout": "BSP" },
